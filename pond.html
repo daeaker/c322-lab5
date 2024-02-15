@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+                width: 20%;
+                border-radius: 5px;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            img {
+                border-radius: 5px 5px 0 0;
+            }
+
+            .container {
+                padding: 2px 16px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="card">
+            <img src="http://localhost:8080/ducks/65/image" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>65</b></h4>
+                <p>Mallard</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="http://localhost:8080/ducks/15/image" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>15</b></h4>
+                <p>Redhead</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="http://localhost:8080/ducks/75/image" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>75</b></h4>
+                <p>Rubber Duck</p>
+            </div>
+        </div>
+    
+<!-- 
+        <button onclick="displayCards()">Display Cards</button> -->
+
+
+
+        <!-- <script>
+
+            let ducks = [];
+
+
+            async function getAll() {
+                let host = "http://localhost:8080/ducks";
+
+        
+                let response = await fetch(host);
+                let result = await response.json();
+
+                ducks = result;
+                return ducks;
+
+            }
+
+            async function displayCards() {
+
+
+                if (ducks.length == 0) {
+                    ducks = await getAll();
+                }
+
+            // for (let duck of ducks) {
+
+            //     let duckId = duck.id;
+            //     let duckType = duck.type;
+
+            //     let source = "http://localhost:8080/ducks/" + duckId + "/image";
+
+            //     let card = document.createElement("card");
+
+            //     let image = document.createElement("img");
+            //     image.src = source;
+            //     let id = document.createTextNode(duckId);
+            //     document.body.appendChild(image);
+            // }
+
+
+            //     for (let duck of ducks) {
+            //         if (!duckType || duck.type.toLowerCase() == duckType.toLowerCase()) {
+            //         let row = document.createElement("tr");
+            //         let cell1 = document.createElement("td");
+            //         let id = document.createTextNode(duck.id);
+            //         cell1.appendChild(id);
+            //         row.appendChild(cell1);
+            //         let cell2 = document.createElement("td");
+            //         let type = document.createTextNode(duck.type);
+            //         cell2.appendChild(type);
+            //         row.appendChild(cell2);
+            //         table.appendChild(row);
+            //             }
+            //         }
+            // }
+
+
+
+
+
+   
+                // let duckType = document.getElementById("type").value;
+                // let table = document.getElementById("result");
+                // table.innerHTML = "";
+        
+                for (let duck of ducks) {
+                    if (true) {
+
+                        let duckId = duck.id;
+                        let duckType = duck.type;
+
+                        let source = "http://localhost:8080/ducks/" + duckId + "/image";
+
+
+                        let image = document.createElement("img");
+                        image.src = source;
+
+                        let card = document.createElement(".card");
+
+                        let container = document.createElement("container");
+                        let id = document.createTextNode("duckId");
+
+                        container.appendChild(id);
+
+                        card.appendChild(image);
+                        card.appendChild(container);
+
+
+                        // let id = document.createTextNode(duck.id);
+                        // cell1.appendChild(id);
+                        // row.appendChild(cell1);
+                        // let cell2 = document.createElement("td");
+                        // let type = document.createTextNode(duck.type);
+                        // cell2.appendChild(type);
+                        // row.appendChild(cell2);
+                        // table.appendChild(row);
+                    }
+                }
+
+
+                
+
+
+            } -->
+
+
+        </script>
+    
+    
+    
+    
+    </body>
+
+
+
+</html>
+
